@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Самохвалов](https://up.htmlacademy.ru/htmlcss/33/user/1954435).
-* Наставник: `Константин Соколов`.(https://htmlacademy.ru/profile/k_sokolov)
+* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/k_sokolov).
 
 
 ---
