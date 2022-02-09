@@ -90,7 +90,11 @@ body{
 	text-align: center;
 	color: #333333;
 }
-.advantages{
+.advantages-list{
+	text-align: center;
+
+}
+.advantages-item{
 	background: #83B3D3;
 	text-align: center;
 	color: #FFFFFF;
@@ -103,10 +107,6 @@ body{
 	line-height: 28px;
 	text-transform: uppercase;
 	
-}
-.comfort-list{
-	text-align: center;
-
 }
 
 .comfort-item{
