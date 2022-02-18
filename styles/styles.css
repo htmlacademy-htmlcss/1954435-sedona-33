@@ -43,14 +43,19 @@ body{
 	line-height: 21px;
 	color:#333333 ;
 	background-color: #FFFFFF;
-}
+	width: 1200px;
+
+	outline: 5px solid rgba(255, 99, 78, 0.5);
+	outline-offset: -5px;
+ }
+
 .page-header{
 	display: flex;
 	width: 1060px;
 	margin: 0 auto;
 	}
 
-.header-logo{
+.navigation-logo{
 	width: 139px;
 	margin-right: 30px;
 	margin-left: 70px;
@@ -64,6 +69,7 @@ body{
 	width: 450px;
 	margin: 0;
 	padding: 0;
+	
 	
 }
 .navigation-user {
@@ -129,17 +135,15 @@ body{
 }
 .advantages-list{
 	text-align: center;
-	
-
+	margin: 0;
+   padding: 0;
 }
 .advantages-item{
 	display: flex;
 	background: #83B3D3;
 	text-align: center;
 	color: #FFFFFF;
-	width: 1200px;
 	
-
 }
 .advantages-title{
 	font-weight: bold;
@@ -240,9 +244,6 @@ color: #000000;
 	
 }
 
-
-
-
 .footer-contacts-phone{
 	font-size: 40px;
 	line-height: 40px;
@@ -295,6 +296,13 @@ font-weight: bold;
 font-size: 20px;
 }
 
+.filter-button{
+	display: flex;
+  flex-direction: column;
+  
+}
+
+
 .button-apply{
 width: 160px;
 font-style: normal;
@@ -315,6 +323,7 @@ line-height: 23px;
 text-align: center;
 color: #FFFFFF;
 background: transparent;
+margin-top: 20px;
 }
 
 .sorting{
@@ -330,11 +339,15 @@ text-transform: uppercase;
 color: #000000;
 }
 
-.cheap{
-	font-weight: normal;
+.select-cheap{
+font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
+}
+
+.button-checked{
+	margin-left: auto;
 }
 .hotel-list{
 	display: flex;
@@ -356,14 +369,14 @@ color: #000000;
 
 }
 .hotel-word{
-	font-weight: normal;
-	font-size: 18px;
+font-weight: normal;
+font-size: 18px;
 line-height: 23px;
 color: #333333;
 }
 
 .button-more{
-	font-weight: bold;
+font-weight: bold;
 font-size: 16px;
 line-height: 21px;
 text-align: center;
@@ -384,7 +397,7 @@ color: #FFFFFF;
 }
 
 .button-favorites-green{
-	font-weight: bold;
+font-weight: bold;
 font-size: 16px;
 line-height: 21px;
 text-align: center;
@@ -394,7 +407,7 @@ color: #FFFFFF;
 }
 
 .rating{
-	font-weight: normal;
+font-weight: normal;
 font-size: 16px;
 line-height: 21px;
 text-align: center;
@@ -406,6 +419,7 @@ background-color:#F2F2F2;
 
 .download{
 	width: 1056px;
+	margin: 0 72px;
 }
 .button-download{
 font-family: PT Sans;
@@ -425,6 +439,7 @@ margin: 0 290px;
 .pagination-block{
 	display: flex;
 	width: 1056;
+	margin: 0 72px;
 }
 
 .pagination-link {
@@ -451,11 +466,12 @@ margin: 0 290px;
 	background-color: #F2F2F2;
 }
 .carrent-hotel{
-	font-style: normal;
+font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
+
 
 }
 .select-control-hotel{
@@ -464,6 +480,7 @@ font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
+margin-left: auto;
 }
 .subscribe-catalog{
 
