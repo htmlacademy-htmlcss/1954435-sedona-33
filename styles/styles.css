@@ -34,7 +34,7 @@ html{height: 100%;
 }
 
 body{
-	margin: 0;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -44,9 +44,7 @@ body{
 	color:#333333 ;
 	background-color: #FFFFFF;
 	width: 1200px;
-
-	outline: 5px solid rgba(255, 99, 78, 0.5);
-	outline-offset: -5px;
+	
  }
 
 .page-header{
@@ -62,7 +60,6 @@ body{
 }
 .navigation{
 	display: flex;
-	width: 890px;
 	margin: 0 auto;
 }	
 .navigation-list{
