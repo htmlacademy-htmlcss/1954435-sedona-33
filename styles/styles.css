@@ -34,16 +34,26 @@ html{height: 100%;
 }
 
 body{
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	font-family:"PT Sans",sans-serif;
-	font-size: 18px;
-	line-height: 21px;
-	color:#333333 ;
-	background-color: #FFFFFF;
-	width: 1200px;
+margin: 0;
+display: flex;
+flex-direction: column;
+min-height: 100%;
+font-family:"PT Sans",sans-serif;
+font-size: 18px;
+line-height: 21px;
+color:#333333 ;
+background-color: #FFFFFF;
+width: 1200px;
+}
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+border: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 .navigation{
@@ -52,19 +62,22 @@ width: 1060px;
 margin: 0 auto;
 }
 .navigation-logo{
-width: 139px;
+margin: 0;
+padding: 0;
 margin-right: 30px;
 }
 .navigation-list{
+display: flex;	
+flex-wrap: wrap; 
 width: 450px;
 margin: 0;
 padding: 0;
+list-style-type: none;
 }
-.navigation-user {
-max-width: 310px;
-margin-left: auto;
-}
+
 .navigation-link {
+display: block;	
+padding: 20px 17px;	
 font-family: "PT Sans";
 font-weight: 700;
 font-size: 20px;
@@ -73,6 +86,15 @@ text-align: center;
 color: #000000;
 text-decoration: none;
 }	
+.navigation-user {
+max-width: 310px;
+margin-left: auto;
+}
+.navigation-user .navigation-link {
+min-width: 20px;
+min-height: 20px;
+}
+
 .button-broun{
 	font-family: inherit;
    font-size: 16px;
@@ -95,47 +117,44 @@ background-color: #fff;
 .main-catalog {
 background-color: #fff;
 }
-
-
 .page-container{
-	width: 1200px;
-	margin: 0 auto;
+width: 1200px;
+margin: 0 auto;
+}
+.welcome{
+background-image: url(../images/index_first_screen/index-background.jpg);
+background-size: 100% auto;
+background-repeat: no-repeat;
 }
 .welcome-image{
-	display: block;
-	margin: 0 auto;
-}
+display: block;
+margin: 51px auto 82px;
 
-
-.first-screen{
-   background-image: url(../images/index_first_screen/index-background.jpg);
-	background-size: 100% auto;
-   background-repeat: no-repeat;
 }
 .advantages-slogan{
-	max-width: 720px;
-	margin: 63px auto 31px;
-	font-family: "PT Sans";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-align: center;
-	text-transform: uppercase;
-	color: #000000;
+max-width: 720px;
+margin: 63px auto 31px;
+font-family: "PT Sans";
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
 }
 .advantages-reasons{
-	max-width: 720px;
-	margin: 31px auto 80px;
-	font-family: "PT Sans";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 22px;
-	line-height: 36px;
-	text-align: center;
-	color: #333333;
+max-width: 720px;
+margin: 31px auto 80px;
+font-family: "PT Sans";
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 36px;
+text-align: center;
+color: #333333;
 }
-.advantages-list{
+.advantages-list {
 display: flex;
 text-align: center;
 flex-wrap: wrap;
@@ -144,7 +163,11 @@ margin: 0;
 padding: 0;
 }
 .advantages-item-wrapper{
-	display: flex;
+display: flex;
+}
+.advantages-wrapper-text{
+display: flex;
+flex-direction: column;
 }
 .advantages-item-blue{
 background: #83B3D3;
@@ -165,6 +188,7 @@ color: #000000;
 text-transform: uppercase;
 }
 .advantage-item{
+
 background: rgba(131, 179, 211, 0.12);
 width: 400px;
 }
@@ -173,6 +197,10 @@ background: #FFFFFF;
 }
 .advantage-road{
 background:rgba(131, 179, 211, 0.2);
+}
+.reverse-image{
+	order: -1;
+
 }
 
 
