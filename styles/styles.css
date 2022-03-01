@@ -443,11 +443,10 @@ line-height: 23px;
 text-align: center;
 color: #FFFFFF;
 background: transparent;
-
 }
 
 .sorting-container{
-width: 1057px;
+width: 1056px;
 margin: 44px 72px 52px;
 display: flex;
 justify-content: space-between;
@@ -460,10 +459,12 @@ font-weight: bold;
 line-height: 39px;
 text-transform: uppercase;
 color: #000000;
+margin-right: 191px;
 }
 .select-setting{
 margin: 0;
 width: 288px;	
+margin-right: 81px;
 }
 .select-cheap{
 font-weight: normal;
@@ -471,15 +472,17 @@ font-size: 18px;
 line-height: 23px;
 color: #333333;
 }
+.sorting-container .button {
+width: 48px;
+height: 48px;
+}
 .button-checked{
 margin-left: auto;
 }
 
 .hotel-card-container{
-	
-	width: 1056px;
-	margin: 0 72px;
-
+width: 1056px;
+margin: 0 72px;
 }
 .hotel-list{
 display: flex;	
@@ -490,6 +493,7 @@ flex-wrap: wrap;
 }
 .hotel-item{
 width: 340px;
+
 }
 .hotel-link{
 text-decoration: none;
@@ -565,11 +569,12 @@ color: #FFFFFF;
 width: 620px;
 }
 
+
 .pagination-container{
-	display: flex;
-	max-width: 1056;
-	margin:60px auto 72px;
-	justify-content: space-between;
+max-width: 1056;
+display: flex;
+margin:30px 72px 72px;
+justify-content: space-between;
 }
 .pagination-list {
 display: flex;
@@ -577,53 +582,52 @@ margin: 0;
 padding: 0;
 list-style-type: none;
 }
-.pagination-item {
-padding-right: 8px;
+.pagination-item:not(:last-child) {
+margin-right: 8px;
 }
-
 .pagination-link {
-	display: block;
-	min-width: 55px;
-	min-height: 55px;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 26px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #ffffff;
-	background-color: #83B3D3;
-
+display: block;
+box-sizing: border-box;
+min-width: 55px;
+min-height: 55px;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+color: #ffffff;
+background-color: #83B3D3;
 }
-
 .pagination-current {
-	font-style: normal;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 26px; 
-	text-align: center;
-	text-transform: uppercase;
-	color: #000000;
-	background-color: #F2F2F2;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px; 
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color: #F2F2F2;
 }
 .select-title{
+width: 175px;	
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
-
-
+margin-right: 51px;
 }
 .select-control-hotel{
+width:160px ;	
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
-margin-left: auto;
 }
+
 .subscribe-catalog{
 color: #ffffff;
 text-align: center;
