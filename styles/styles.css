@@ -125,12 +125,11 @@ margin: 0 auto;
 background-image: url(../images/index_first_screen/index-background.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
+padding-top: 51px;
+padding-bottom: 82px;
 }
-.welcome-image{
-display: block;
-margin: 51px auto 82px;
 
-}
+
 .advantages-slogan{
 max-width: 720px;
 margin: 63px auto 31px;
@@ -185,7 +184,9 @@ font-weight: 400;
 font-size: 18px;
 line-height: 21px;
 text-align: center;
-
+min-width: 220px;
+max-width: 250px;
+margin: 30px 87px 75px;
 }
 
 .advantages-list-subitem{
@@ -232,6 +233,9 @@ background:rgba(131, 179, 211, 0.2);
 }
 .reverse-image{
 order: -1;
+}
+.advantage-description-text{
+margin:0 75px 108px ;
 }
 
 
