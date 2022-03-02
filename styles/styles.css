@@ -411,7 +411,7 @@ line-height: 23px;
 .cost-label {
 font-size: 18px;
 line-height: 23px;
- }
+}
 .filter-wrapper{
 display: flex;
 justify-content: space-around;
@@ -447,8 +447,8 @@ background: transparent;
 
 .sorting-container{
 width: 1056px;
-margin: 44px 72px 52px;
 display: flex;
+padding:44px 72px 52px; 
 justify-content: space-between;
 }
 .sorting-heading{
@@ -571,9 +571,9 @@ width: 620px;
 
 
 .pagination-container{
-max-width: 1056;
+max-width: 1056px;
 display: flex;
-margin:30px 72px 72px;
+margin:30px auto 72px;
 justify-content: space-between;
 }
 .pagination-list {
@@ -631,6 +631,7 @@ color: #333333;
 .subscribe-catalog{
 color: #ffffff;
 text-align: center;
+margin-bottom: 141px;
 }
 .subscribe-heading-catalog{
 font-weight: bold;
@@ -638,7 +639,6 @@ font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
 color: #000000;
-margin-top: 73px;
 margin-bottom: 46px;
 }
 .subscribe-description-catalog{
