@@ -62,6 +62,7 @@ width: 1060px;
 margin: 0 auto;
 }
 .navigation-logo{
+width: 139px;
 margin: 0;
 padding: 0;
 margin-right: 30px;
@@ -125,6 +126,8 @@ margin: 0 auto;
 background-image: url(../images/index_first_screen/index-background.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
+margin: 0;
+padding: 0;
 padding-top: 51px;
 padding-bottom: 82px;
 }
@@ -132,7 +135,11 @@ padding-bottom: 82px;
 
 .advantages-slogan{
 max-width: 720px;
-margin: 63px auto 31px;
+margin: 0;
+padding: 0;
+padding-top: 63px;
+margin: 0 auto 31px;
+
 font-family: "PT Sans";
 font-style: normal;
 font-weight: 700;
@@ -144,7 +151,7 @@ color: #000000;
 }
 .advantages-reasons{
 max-width: 720px;
-margin: 31px auto 80px;
+margin: 0 auto 80px;
 font-family: "PT Sans";
 font-style: normal;
 font-weight: normal;
@@ -457,8 +464,6 @@ display: flex;
 padding:44px 72px 0;
 justify-content: space-between;
 margin-bottom: 53px;
-
-
 }
 .sorting-heading{
 margin: 0;
