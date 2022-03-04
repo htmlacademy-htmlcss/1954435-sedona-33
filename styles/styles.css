@@ -126,10 +126,12 @@ margin: 0 auto;
 background-image: url(../images/index_first_screen/index-background.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
-margin: 0;
-padding: 0;
+}
+.welcome-image{
+display: block;
+margin: 0 auto;
 padding-top: 51px;
-padding-bottom: 82px;
+padding-bottom: 82px;	
 }
 
 
