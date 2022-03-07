@@ -173,11 +173,12 @@ padding: 0;
 }
 .advantage-item-wrapper{
 display: flex;
+}
+.advantage-wrapper-text{
+padding: 97px 90px 87px;
 color: #ffffff;
 background-color: #83B3D3;
-padding: 0;
 }
-
 .advantage-title{
 margin: 0;	
 font-weight: bold;
@@ -185,11 +186,10 @@ font-size: 24px;
 line-height: 28px;
 text-align: center;
 text-transform: uppercase;
-padding-top: 97px;
 margin-bottom: 30px;
 }
 .advantage-number{
-margin: 0 75px 30px;
+margin: 0 auto 30px;
 }
 .advantage-description {
 margin: 0;	
@@ -199,8 +199,6 @@ line-height: 21px;
 text-align: center;
 min-width: 220px;
 max-width: 250px;
-margin: 0 75px 87px;
-
 }
 
 .advantages-list-subitem{
@@ -235,7 +233,7 @@ background: rgba(131, 179, 211, 0.12);
 background: #FFFFFF; 
 }
 .advantage-fon{
-	width: 400px;		
+width: 400px;		
 background: rgba(131, 179, 211, 0.12);		
 }
 .dark-title{
@@ -248,9 +246,11 @@ background:rgba(131, 179, 211, 0.2);
 .reverse-image{
 order: -1;
 }
-.advantage-description-text{
-margin:0 75px 108px ;
+.advantage-wrapper-info{
+padding: 97px 75px 108px;	
 }
+
+
 
 
 .search-hotel{
