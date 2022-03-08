@@ -386,7 +386,9 @@ background-image: url(../images/catalog/filter_group/catalog-background1.jpg);
 background-size:cover;
 background-repeat: no-repeat;
 color: #ffffff;
-padding: 35px 70px 75px;
+padding: 35px 70px;
+min-height: 408px;
+box-sizing: border-box;
 }
 .inner-header-title{
 margin: 0;
@@ -428,11 +430,16 @@ list-style: none;
 font-weight: 700;
 font-size: 20px;
 line-height: 26px;
+margin-bottom: 30px;
 }
 .filter-item{
 font-size: 18px;
 line-height: 23px;
 }
+.filter-item:not(:last-child) {
+margin-bottom: 16px;
+}
+
 
 .filter-form{
 display: flex;
@@ -447,20 +454,24 @@ margin-right: 67px;
 .filter-housing{
 margin-right: 167px;
 }
-
-
 .filter-range{
 width: 288px;
 margin-right: 81px;
-	
 }
 .range{
 display: flex;	
 }
 .range-cost{
-	display: flex;
+display: flex;
 box-sizing: border-box;		
-
+position: relative;
+}
+.range-price {
+font-size: 18px;
+line-height: 23px;
+position: absolute;
+top: 0;
+right: 14px;
 }
 .range-field{
 width: 144px;	
@@ -469,16 +480,17 @@ background-color: transparent;
 box-sizing: border-box;
 }
 
-.range-price {
-font-size: 18px;
-line-height: 23px;
-}
 .filter-button{
+margin: 0;
+padding: 0;	
+width: 160px;	
 display: flex;	
 flex-direction: column;
+margin-left: auto;
+margin-top: 55px;
 }
-
 .button-apply{
+width: 160px;	
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
