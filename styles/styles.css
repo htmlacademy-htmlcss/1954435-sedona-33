@@ -165,10 +165,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 400px;	
-padding: 50px;
+/*padding: 50px;*/
 color: #ffffff;
 box-sizing: border-box;
-justify-content: center;
+/*justify-content: center;*/
 }
 .advantage-wrapper-blue{
 background-color: #83B3D3;	
@@ -185,6 +185,7 @@ font-size: 24px;
 line-height: 28px;
 text-align: center;
 text-transform: uppercase;
+padding-top: 97px;
 margin-bottom: 30px;
 max-width: 220px;
 }
@@ -199,8 +200,6 @@ line-height: 21px;
 text-align: center;
 max-width: 220px;
 }
-
-
 .advantages-list-subitem{
 display: flex;
 margin: 0;
@@ -214,7 +213,7 @@ flex-direction: column;
 align-items: center;
 width: 400px;	
 height: 384px;
-padding: 40px;
+/*padding: 40px;*/
 box-sizing: border-box;
 background: rgba(131, 179, 211, 0.12);
 
@@ -226,7 +225,8 @@ line-height: 28px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
-/*margin: 184px 75px 20px;*/
+margin-bottom: 20px;
+
 }
 .advantage-description-subitem {
 font-weight: 400;
@@ -234,10 +234,6 @@ font-size: 18px;
 line-height: 21px;
 text-align: center;
 width: 250px;
-
-}
-.dark-title{
-color: #000000;
 }
 .advantage-food{
 background: #FFFFFF; 
@@ -248,6 +244,9 @@ background: rgba(131, 179, 211, 0.12);
 
 .advantage-dark-grey{
 background:rgba(131, 179, 211, 0.2);
+}
+.dark-title{
+color: #000000;
 }
 
 
