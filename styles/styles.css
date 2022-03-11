@@ -170,6 +170,7 @@ flex-wrap: wrap;
 list-style-type: none;
 margin: 0;
 padding: 0;
+flex-direction: row;
 }
 .advantage-item-wrapper{
 display: flex;
@@ -245,6 +246,7 @@ line-height: 28px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
+margin-top: 184px;
 margin-bottom: 20px;
 
 }
