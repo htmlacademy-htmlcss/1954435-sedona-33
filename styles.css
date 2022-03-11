@@ -1,0 +1,255 @@
+/*
+Внимательно следим за отступами в коде. Код должен быть написан единообразно, если делаешь отступ между слекторами, то делаешь это по всему css.
+Если после открывающейся скобки идет новая строчка, то она идет во всех свойствах
+*/
+
+/* Для того что бы было проще подгонять размеры элементов нужно прописать всем элементам border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  /* По макету у html есть фон  */
+
+  background-color: #e5e5e5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* По макету у body есть тень, так же нужно прописать width 1200*/
+  width: 1200px;
+  min-height: 100%;
+  /*  и отцентрировать контент */
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Для того что бы картинки смотрелись нормально при любых обстоятельствах, нужно прописать им группу свойств */
+img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.advantages-header {
+  /* ширину блока лучше сделать на advantages-header, а не на .advantages-slogan, что бы не прописывать каждому элементу */
+  max-width: 720px;
+  margin: 0 auto;
+  /* Верхний паддинг лучше сделать на advantages-header, а не на .advantages-slogan */
+  padding-top: 33px;
+  padding-bottom: 58px;
+
+  text-align: center;
+}
+
+.advantages-slogan {
+  /* ширину блока лучше сделать на advantages-header, а не на .advantages-slogan, что бы не прописывать каждому элементу */
+  /* max-width: 720px; */
+  /* margin: 0; */
+  /* Соответственно меняем и маргин */
+  /* margin: 0 auto 31px; */
+  /* padding: 0; */
+  /* Верхний паддинг лучше сделать на advantages-header  */
+  /* padding-top: 63px; */
+  /* Можно не прописывать */
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  /* Шрифт у вас уже указан в body, абзац наследует это значение */
+  /* font-family: "PT Sans"; */
+  /* Прописываем в advantages-header */
+  /* text-align: center; */
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-reasons {
+  /* Ширину и маргин прописываем в advantages-header */
+  /* max-width: 720px; */
+  /* margin: 0 auto 80px; */
+  /* По умолчанию и так шрифт normal и font-weight 400 */
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  font-size: 22px;
+  line-height: 36px;
+  /* Шрифт у вас уже указан в body, абзац наследует это значение */
+  /* font-family: "PT Sans"; */
+  /* Прописываем в advantages-header */
+  /* text-align: center; */
+  color: #333333;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  /* Нет необходимости */
+  /* text-align: center; */
+}
+
+.advantage-item-wrapper {
+  display: flex;
+  /* У div нет паддингов по умолчанию */
+  /* padding: 0; */
+  /* Фон и цвет текста прописываем именно на блоке с текстом */
+  /* color: #ffffff; */
+
+  /* background-color: #83b3d3; */
+}
+
+.advantage-item-full:nth-child(2n) .advantage-item-wrapper {
+  flex-direction: row-reverse;
+}
+
+.advantage-wrapper-text {
+  width: 400px;
+  min-height: 384px;
+  padding: 74px 75px 20px;
+
+  text-align: center;
+
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item:nth-child(2n) .advantage-wrapper-text {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-item-wrapper .advantage-wrapper-text {
+  color: #ffffff;
+
+  background-color: #83b3d3;
+}
+
+.advantage-title {
+  /* margin: 0; */
+  margin-bottom: 30px;
+  /* Паддинг прописываем блоку .advantage-wrapper-text */
+  /* padding-top: 97px; */
+  /* Заголовок и так жирный, не нужно дублировать */
+  /* font-weight: bold; */
+
+  font-size: 24px;
+  line-height: 28px;
+  /* Прописываем на .advantage-wrapper-text */
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
+.advantage-number {
+  /* margin: 0 75px 30px; */
+  margin-bottom: 28px;
+}
+
+.advantage-description {
+  /* min-width: 220px; */
+  /* max-width: 250px; */
+  /* margin: 0; */
+  margin-top: 0;
+  /* margin: 0 75px 87px; */
+  /* font-weight: 400; */
+
+  font-size: 18px;
+  line-height: 21px;
+  /* text-align: center; */
+}
+
+/* Прописываем картинке block, что бы избавиться от не нужных отступов, и высоту, что бы выровнять картинку по макету */
+.advantage-img img {
+  display: block;
+  height: 100%;
+}
+
+.advantages-list-subitem {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  /* text-align: center; */
+}
+
+.advantage-subitem .advantage-wrapper-text {
+  padding-top: 160px;
+}
+
+.advantage-subitem .advantage-title {
+  margin-bottom: 20px;
+}
+
+.advantage-subitem:nth-child(2n) .advantage-wrapper-text {
+  background-color: #ffffff;
+}
+
+/* .advantage-title-subitem {
+  margin: 184px 75px 20px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantage-description-subitem {
+  width: 250px;
+  margin: 0 75px 79px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantage-subitem {
+  width: 400px;
+
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-food {
+  background: #ffffff;
+}
+
+.advantage-fon {
+  width: 400px;
+
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.dark-title {
+  color: #000000;
+}
+
+.advantage-road {
+  width: 400px;
+
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.reverse-image {
+  order: -1;
+}
+
+.advantage-description-text {
+  margin: 0 75px 108px;
+} */
