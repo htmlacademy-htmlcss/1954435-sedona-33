@@ -29,7 +29,9 @@ src: url("../fonts/ptsans-700.woff2") format("woff2");
 font-display: swap;
 }
 
-html{height: 100%;
+html{
+height: 100%;
+background-color: #e5e5e5;	  
 }
 
 body{
@@ -133,39 +135,36 @@ padding-top: 51px;
 padding-bottom: 82px;	
 }
 
-
-.advantages-slogan{
+.advantages-header{
 max-width: 720px;
+margin: 0 auto;
+padding-top: 63px;
+text-align: center;
+margin: 0 auto 80px;
+}
+.advantages-slogan{
 margin: 0;
 padding: 0;
-padding-top: 63px;
-margin: 0 auto 31px;
-
-font-family: "PT Sans";
-font-style: normal;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
+min-height: 72px;
+margin:0 auto 31px;
 }
 .advantages-reasons{
-max-width: 720px;
-margin: 0 auto 80px;
-font-family: "PT Sans";
-font-style: normal;
-font-weight: normal;
+padding: 0;
+margin: 0;
 font-size: 22px;
 line-height: 36px;
-text-align: center;
 color: #333333;
 }
 
 
 .advantages-list {
 display: flex;
-text-align: center;
 flex-wrap: wrap;
 list-style-type: none;
 margin: 0;
@@ -182,6 +181,7 @@ flex-direction: column;
 align-items: center;
 width: 400px;	
 box-sizing: border-box;
+
 }
 .advantage-wrapper-blue{
 background-color: #83B3D3;	
@@ -189,6 +189,7 @@ color: #ffffff;
 }
 .advantages-picture{
 display:block ;
+height: 100%;
 width: 800px;
 height: 384px;
 }
@@ -197,13 +198,11 @@ height: 384px;
 margin: 0;	
 font-size: 24px;
 line-height: 28px;
-text-align: center;
 text-transform: uppercase;
 min-height: 56px;
 padding-top: 98px;
 padding-bottom: 30px;
 max-width: 220px;
-
 }
 .advantage-number{
 padding: 0;	
