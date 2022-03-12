@@ -181,7 +181,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 400px;	
-/*padding: 0 20px 20px 20px;*/
+/*padding: 20px;*/
 box-sizing: border-box;
 /*justify-content: center;*/
 }
@@ -202,7 +202,7 @@ line-height: 28px;
 text-align: center;
 text-transform: uppercase;
 min-height: 56px;
-padding: 98px;
+margin-top: 98px;
 padding-bottom: 30px;
 max-width: 220px;
 
@@ -210,7 +210,7 @@ max-width: 220px;
 .advantage-number{
 padding: 0;	
 margin: 0;
-padding: 0 auto 30px;
+padding-bottom:30px;
 }
 .advantage-description {
 margin: 0;	
@@ -246,6 +246,7 @@ line-height: 28px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
+min-height: 28px;
 margin-top: 184px;
 margin-bottom: 20px;
 
