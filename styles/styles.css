@@ -274,31 +274,32 @@ color: #000000;
 padding-top: 91px;
 padding-bottom: 93px;	
 text-align: center;
-
 }
-.search-question{
+.search-title{
 max-width: 720px;	
-margin:0 240px 29px;
-font-weight: 700;
+margin:0 auto;
+font-weight: 700; 
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
 color: #000000;
+margin-bottom: 29px;
 }
 .search-data{
 max-width: 720px;	
-margin: 0 240px 56px;
-font-weight: 400;
+margin: 0 auto;
+margin-bottom: 56px;
 font-size: 22px;
 line-height: 26px;
-text-align: center;
 color: #333333;
+
 }
 .button-search{
 display: block;	
 width: 575px;
-padding: 15px;
-margin: 0 312px;
+padding-top: 15px;
+padding-bottom: 15px;
+margin: 0 auto;
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
@@ -310,37 +311,59 @@ border-radius: 10px;
 }
 
 .subscribe{
-padding-top:94px ;	
+padding-top:94px;
 padding-bottom: 94px;
 background-image: url(../images/index_photo/background-subscribe.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
 color: #ffffff;
 text-align: center;
+min-height: 411px;
 }
-.subscribe-heading{
-max-width: 720px;		
-margin: 0 240px 29px;
-font-weight: 700;
+.subscribe--title{
+min-width: 720px;		
+margin: 0 auto 29px;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
 }
 .subscribe-description{
 max-width: 720px;	
-margin: 0 240px 46px;
+margin: 0 auto 46px;
 font-weight: 400;	
 font-size: 22px;
 line-height: 26px;
+min-height: 52px;
+}
+.subscribe-form{
+display: flex;
+justify-content: center;
+margin: 0 auto;
+max-width: 800px;	
+}
+.subscribe-field{
+margin: 0;	
+padding: 0;
+min-width: 600px;
+min-height: 60px;	
+border-radius: 10px 0px 0px 10px;	
+padding-left: 22px;
+padding-right: 19px;
+background: #F2F2F2;
+color:#000000;
+font-size: 18px;
+line-height: 26px;
+border: none;
 }
 
 .subscribe-button{
 font-weight: 700;
-font-size: 20px;
-line-height: 26px;
 text-transform: uppercase;
 color: #FFFFFF;
 background: #83B3D3;
+font-size: 20px;
+line-height: 26px;
+border-radius: 0px 10px 10px 0px;
 }
 
 .page-footer-container{
