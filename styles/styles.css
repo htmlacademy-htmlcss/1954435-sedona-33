@@ -311,21 +311,23 @@ border-radius: 10px;
 }
 
 .subscribe{
-padding-top:94px;
-padding-bottom: 94px;
 background-image: url(../images/index_photo/background-subscribe.jpg);
 background-size: 100% auto;
 background-repeat: no-repeat;
 color: #ffffff;
 text-align: center;
-min-height: 411px;
+height: 411px;
+
 }
-.subscribe--title{
+.subscribe-title{
 min-width: 720px;		
-margin: 0 auto 29px;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
+padding-top: 94px;
+margin: 0 auto 29px;
+
+
 }
 .subscribe-description{
 max-width: 720px;	
