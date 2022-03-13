@@ -725,6 +725,7 @@ margin: 0 auto;
 max-width: 1056px;
 display: flex;
 margin:0 72px;
+height: 55px;
 justify-content: space-between;
 }
 .pagination-list {
@@ -741,7 +742,6 @@ display: block;
 box-sizing: border-box;
 min-width: 55px;
 min-height: 55px;
-font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 26px;
@@ -750,6 +750,8 @@ text-transform: uppercase;
 text-decoration: none;
 color: #ffffff;
 background-color: #83B3D3;
+border-radius: 4px;
+padding-top: 14px;
 }
 .pagination-current {
 font-style: normal;
@@ -763,8 +765,6 @@ background-color: #F2F2F2;
 }
 .select-title{
 width: 175px;	
-font-style: normal;
-font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
@@ -772,9 +772,7 @@ margin-right: 51px;
 }
 .select-control-hotel{
 width:160px ;	
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
+height: 48px;
 line-height: 23px;
 color: #333333;
 border-radius: 4px;
