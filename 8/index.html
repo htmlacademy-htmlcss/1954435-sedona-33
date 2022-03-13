@@ -54,18 +54,20 @@
       </section>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advantages-slogan">Седона — небольшой городок в Аризоне,
-          заслуживающий большего!</p>
-        <p class="advantages-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-
+        <div class="advantages-header">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <p class="advantages-slogan">Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</p>
+          <p class="advantages-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <ul class="advantages-list">
           <li class="advantage-item">
             <div class="advantage-item-wrapper">
               <div class="advantage-wrapper-text advantage-wrapper-blue">
                 <h3 class="advantage-title">Настоящий Городок</h3>
                 <p class="advantage-number">— №1 —</p>
-                <p class="advantage-description"> Седона — не аттракцион <br> для туристов, там течёт <br> своя жизнь</p>
+                <p class="advantage-description"> Седона — не аттракцион <br> для туристов, там течёт <br> своя жизнь
+                </p>
               </div>
               <div class="advantages-picture">
                 <img class="advantages-1-city" src="images/index_photo/advantage-1.jpg" width="800" height="384"
@@ -128,8 +130,7 @@
       </section>
 
       <section class="search-hotel">
-        <h2 class="visually-hidden">Поиск Гостиницы</h2>
-        <p class="search-question">Заинтересовались?</p>
+        <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-data">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
@@ -138,11 +139,12 @@
 
       <div class="subscribe">
         <h2 class="visually-hidden">Подписка</h2>
-        <p class="subscribe-heading">Подпишитесь на рассылку</p>
-        <p class="subscribe-description">Только полезная информация и никакого спама,
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, <br>
           честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe-field" type="email" name="email" placeholder="Ваш е-mail" required>
+          <label class="visually-hidden" for="letter-email" >email</label>
+          <input class="subscribe-field" type="email" name="letter-email" placeholder="Ваш е-mail" required>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </div>

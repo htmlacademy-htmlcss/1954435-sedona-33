@@ -71,18 +71,20 @@
 							<legend class="filter-title">Инфраструктура:</legend>
 							<ul class="filter-list">
 								<li class="filter-item">
+									<label class="filter-control" for="swim-pool">
+										<input class="filter-control-input" type="checkbox" name="swim-pool" id="swim-pool"
+											checked>Бассейн
+									</label>
+								</li>
+								<li class="filter-item" for="parking">
 									<label class="filter-control">
-										<input class="filter-control-input" type="checkbox" name="swimming-pool" checked>Бассейн
+										<input class="filter-control-input" type="checkbox" name="parking" id="parking"
+											checked>Парковка
 									</label>
 								</li>
 								<li class="filter-item">
-									<label class="filter-control">
-										<input class="filter-control-input" type="checkbox" name="parking" checked>Парковка
-									</label>
-								</li>
-								<li class="filter-item">
-									<label class="filter-control">
-										<input class="filter-control-input" type="checkbox" name="wireless"> Wi-Fi
+									<label class="filter-control" for="wireless">
+										<input class="filter-control-input" type="checkbox" name="wireless" id="wireless"> Wi-Fi
 									</label>
 								</li>
 							</ul>
@@ -91,20 +93,22 @@
 						<fieldset class="filter-group filter-housing">
 							<legend class="filter-title">Тип жилья:</legend>
 							<ul class="filter-list">
-								<li class="filter-item">
+								<li class="filter-item" for="hotel">
 									<label class="filter-control">
-										<input class="filter-control-input" type="radio" name="type-housing" value="norm"
-											checked>Гостиница
+										<input class="filter-control-input" type="radio" name="type-housing" id="hotel"
+											value="hotel" checked>Гостиница
+									</label>
+								</li>
+								<li class="filter-item" for="motel">
+									<label class="filter-control">
+										<input class="filter-control-input" type="radio" name="type-housing" id="motel"
+											value="motel">Мотель
 									</label>
 								</li>
 								<li class="filter-item">
-									<label class="filter-control">
-										<input class="filter-control-input" type="radio" name="type-housing" value="small">Мотель
-									</label>
-								</li>
-								<li class="filter-item">
-									<label class="filter-control">
-										<input class="filter-control-input" type="radio" name="type-housing" value="luxury">Апартаменты
+									<label class="filter-control" for="apparment">
+										<input class="filter-control-input" type="radio" name="type-housing" id="apparment"
+											value="appartment">Апартаменты
 									</label>
 								</li>
 							</ul>
@@ -141,16 +145,23 @@
 						<option value="popular">Сначала популярные</option>
 						<option value="expensive">Сначала дорогие</option>
 					</select>
-
-					<a class="button button-checked" href="#">
-						<span class="visually-hidden">Показать плиткой</span>
-					</a>
-					<a class="button button-light" href="#">
-						<span class="visually-hidden">Показать слайд-шоу</span>
-					</a>
-					<a class="button button-light" href="#">
-						<span class="visually-hidden">Показать список</span>
-					</a>
+					<ul class="soring-list">
+						<li class="sorting-item">
+							<a class="button button-checked" href="#">
+								<span class="visually-hidden">Показать плиткой</span>
+							</a>
+						</li>
+						<li class="soring-list">
+							<a class="button button-light" href="#">
+								<span class="visually-hidden">Показать слайд-шоу</span>
+							</a>
+						</li>
+						<li class="soring-list">
+							<a class="button button-light" href="#">
+								<span class="visually-hidden">Показать список</span>
+							</a>
+						</li>
+					</ul>
 				</div>
 
 				<div class="hotel-card-container">
@@ -227,8 +238,8 @@
 							</p>
 					</ul>
 
-					<div class="download-more">
-						<button class="button-download" type="button">Загрузить ещё</button>
+					<div class="hotel-upload">
+						<button class="button-upload" type="button">Загрузить ещё</button>
 					</div>
 				</div>
 
