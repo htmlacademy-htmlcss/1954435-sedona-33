@@ -655,8 +655,8 @@ width: 1056px;
 max-height: 48px;
 display: flex;
 padding:44px 72px 0;
-justify-content: space-between;
 align-items: center;
+margin-bottom: 53px;
 }
 .sorting-title{
 margin: 0;
@@ -665,6 +665,7 @@ font-size: 30px;
 line-height: 39px;
 text-transform: uppercase;
 color: #000000;
+min-width: 337px;
 margin-top: 6px;
 margin-right: 191px;
 }
@@ -675,19 +676,25 @@ width: 287px;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
+background-image: url("../images/catalog/sorting/dropdown\ 1.svg");
+background-repeat: no-repeat;
+background-position: 253px center;
 background-color: white;
 border: 2px solid #E6E6E6;
 box-sizing: border-box;
 border-radius: 4px;
-margin-right: 81px;
 padding: 9px 50px 12px 18px;
+appearance: none;
 }
-.sorting-container .button {
-width: 48px;
-height: 48px;
+.select-setting:hover {
+outline: 2px solid #83B3D3;
 }
-.button-checked{
-margin-left: auto;
+.select-setting:active {
+color: rgba(51, 51, 51, 0.3);
+outline: rgba(230, 230, 230, 0.3);
+}
+.select-setting:focus {
+outline: 2px solid #83B3D3;
 }
 .soring-list{
 display:flex ;	
@@ -695,8 +702,47 @@ flex-wrap: wrap;
 list-style-type: none;
 margin: 0;
 padding: 0;
-
+margin-left: auto;
 }
+.sorting-item:not(:last-child) {
+margin-right: 8px;
+}
+.button-sorting{
+position: relative;
+display: block;
+width: 48px;
+height: 48px;
+box-sizing: border-box;
+border: 2px solid #E6E6E6;
+border-radius: 4px;	
+}
+.button-sort-active {
+border: 2px solid #000000;
+}
+.button-sorting:not(.button-sort-active):hover {
+border: 2px solid #83B3D3;
+}
+.button-sorting.button-sorting:not(.button-sort-active):focus-within {
+border: 2px solid #83B3D3;
+}
+.button-showcards{
+background-image: url("../images/catalog/sorting/mode-tile\ 1.svg");
+background-repeat: no-repeat;
+background-position: center;	
+}
+.button-slideshow{
+background-image: url("../images/catalog/sorting/mode-slideshow\ 1.svg");
+background-repeat: no-repeat;
+background-position: center;		
+}
+.button-listshow{
+background-image: url("../images/catalog/sorting/mode-list\ 1.svg");
+background-repeat: no-repeat;
+background-position: center;			
+}
+
+
+
 
 .hotel-list{
 display: grid;
