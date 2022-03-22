@@ -584,7 +584,7 @@ height: 34px;
 padding: 0;  
 }
 .htmlacademy-link:hover {
-	color: #756257;
+color: #756257;
 }
 .htmlacademy-link:focus {
 color: #756257;
@@ -592,8 +592,8 @@ border-radius: 10px;
 outline: 3px solid #68A2CA ;
 }
 .htmlacademy-link:active {
-	color: #756257;
-	opacity: 0.3;
+color: #756257;
+opacity: 0.3;
 }
 
 /* Cтилизация каталога*/
