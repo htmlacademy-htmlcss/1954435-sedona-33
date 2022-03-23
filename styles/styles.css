@@ -78,8 +78,8 @@ width: 450px;
 margin: 0;
 padding: 0;
 list-style-type: none;
-	
 }
+
 .navigation-link {
 display: block;
 font-weight: 700;
@@ -89,6 +89,8 @@ line-height: 26px;
 text-align: center;
 color: #000000;
 text-decoration: none;
+margin-left: 17px;
+margin-right: 17px;
 }	
 .navigation-link:hover {
 color: #756257;
@@ -102,16 +104,6 @@ border-bottom-color: #756257;
 .navigation-link-current {
 padding-bottom: 18px;
 border-bottom: 2px solid #756257;
-}
-
-.navigation-item:not(:last-child) {
-margin-right: 34px;
-}
-.navigation-item:first-child {
-margin-left: 17px;
-}
-.navigation-item:last-child {
-margin-right: 17px;
 }
 
 
@@ -902,7 +894,6 @@ display: block;
 width: 133px;
 max-height: 37px;
 margin-right: auto;
-box-sizing: border-box;
 padding: 9px;
 margin-bottom: 16px;
 }
