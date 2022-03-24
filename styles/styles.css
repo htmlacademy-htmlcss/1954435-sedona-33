@@ -230,9 +230,9 @@ margin: 0 auto;
 padding-top: 51px;
 padding-bottom: 82px;	
 }
-.advantages{
+/*.advantages{
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+} */
 .advantages-header{
 max-width: 720px;
 margin: 0 auto;
@@ -485,39 +485,36 @@ text-align: center;
 width: 100%;
 border: none;
 }
+
 .page-footer{
-display: flex;
-justify-content: space-around;
-margin: 0 auto;
 width: 1200px;	
+margin: 0 auto;
+}
+.footer-concats{
+display:flex;	
+padding: 40px 72px 30px;
 }
 
-.page-footer a {
-text-decoration: none;
-display: block;
-background-color: #ffffff;
-}	
-.footer-social{
-max-width: 140px;
-margin: 49px 61px 53px 72px ;
-}
 .footer-social-list {
 display: flex;
 flex-wrap: wrap;
 margin: 0;
 padding: 0;
 list-style-type: none;
+width: 177px;
 }
 .footer-social-item{
 min-width: 20px;	
 }
 .footer-social-item:not(:last-child){
-margin-right: 30px;
+margin-right: 3px;
 }
 .footer-social-link {
-display: block;
-/*padding: 5px;*/
-/*margin: 10px 0px;*/
+display: flex;
+align-items: center;
+width: 34px;
+height: 34px;
+justify-content: center;
 background-position: center;
 background-repeat: no-repeat;
 color: #83B3D3;
@@ -529,19 +526,12 @@ color: #68A2CA;
 border: 3px solid #83B3D3;
 border-radius: 10px;
 box-sizing: border-box;
-
 }
 .footer-social-link:active {
 color: #68A2CA;
 opacity: 0.3;
 }
 
-
-.footer-phone{
-width: 720px;
-padding: 0;
-margin: 40px 0 30px 0;
-}
 .footer-link-phone{
 display: block;
 font-weight: 400;	
@@ -551,6 +541,7 @@ text-align: center;
 text-decoration: none;
 text-transform: uppercase;
 color: #000000;
+margin: 0 auto;
 }
 .footer-link-phone:hover {
 color: #756257;
@@ -567,17 +558,13 @@ border-radius: 10px;
 color: #756257;
 opacity: 0.3;
 }
-.footer-author{
-max-width: 115px;
-height: 34px;
-margin: 42px 72px 44px auto;
-}
+
 .htmlacademy-link {
 display: block;
 color: #000000;
 width: 115px;
-height: 34px;
 padding: 0;  
+margin-left: auto;
 }
 .htmlacademy-link:hover {
 color: #756257;
@@ -881,7 +868,6 @@ font-weight: normal;
 font-size: 18px;
 line-height: 23px;
 color: #333333;
-/*width: 133px;*/
 width: 133px;
 margin-bottom: 16px;
 }
